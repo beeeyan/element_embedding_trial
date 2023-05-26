@@ -39,6 +39,7 @@ class _MyAppState extends State<MyApp> {
   void increment() {
     setState(() {
       _counterScreenCount++;
+      //　JS側に変更を検知させるための記述
       _streamController.add(null);
     });
   }

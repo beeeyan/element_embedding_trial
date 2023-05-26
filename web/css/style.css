@@ -151,6 +151,7 @@
   }
   
   /** The style for the DIV where flutter will be rendered, and the CSS fx */
+  /* Flutterの出力部分が自動的にコンテンツを表示することはなく、枠の確保が必要 */
   #flutter_target {
     border: 1px solid #aaa;
     width: 320px;

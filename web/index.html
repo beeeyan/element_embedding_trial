@@ -34,7 +34,7 @@
       <aside id="demo_controls">
         <h1>Element embedding</h1>
 
-        <fieldset id="fx">
+        <!-- <fieldset id="fx">
           <legend>Effects</legend>
           <input value="Shadow" data-fx="shadow" type="button" class="fx" />
           <input value="Mirror 🧪" data-fx="mirror" type="button" class="fx" />
@@ -53,7 +53,7 @@
             </datalist>
             </div>
           <input value="Device" data-fx="handheld" type="button" class="fx" />
-        </fieldset>
+        </fieldset> -->
 
         <fieldset id="interop">
           <legend>JS Interop</legend>
@@ -94,7 +94,9 @@
         });
       });
     </script>
+    <!-- defer属性は、ドキュメントの解析が終わるまでスクリプトの実行を延期するようブラウザに指示します。 -->
+    <!-- これは、ページの読み込み時間を改善し、他のリソースをブロックするのを防ぐことができる。 -->
     <script src="js/demo-js-interop.js" defer></script>
-    <script src="js/demo-css-fx.js" defer></script>
+    <!-- <script src="js/demo-css-fx.js" defer></script> -->
   </body>
 </html>

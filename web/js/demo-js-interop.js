@@ -16,6 +16,7 @@
       };
   
       // Register a callback to update the HTML field from Flutter.
+      // Streamの処理を検知しているのはここ
       appState.addHandler(updateState);
   
       // Render the first value (0).
