@@ -45,6 +45,14 @@ class _MyAppState extends State<MyApp> {
   }
 
   @js.JSExport()
+  void decrement() {
+    setState(() {
+      _counterScreenCount--;
+      _streamController.add(null);
+    });
+  }
+
+  @js.JSExport()
   void addHandler(void Function() handler) {
     _streamController.stream.listen((event) {
       handler();
