@@ -27,18 +27,18 @@
         appState.increment();
       });
   
-      let screenSelector = document.querySelector("#screen-selector");
-      screenSelector.addEventListener("change", (event) => {
-        appState.changeDemoScreenTo(event.target.value);
-        setJsInteropControlsEnabled(event.target.value === 'counter');
-      });
+      // let screenSelector = document.querySelector("#screen-selector");
+      // screenSelector.addEventListener("change", (event) => {
+      //   appState.changeDemoScreenTo(event.target.value);
+      //   setJsInteropControlsEnabled(event.target.value === 'counter');
+      // });
   
       // Enables/disables the Value/Increment controls.
-      function setJsInteropControlsEnabled(enabled) {
-        let elements = document.querySelectorAll("#increment, label[for='value']");
-        elements.forEach((el) => {
-          el.classList.toggle('disabled', !enabled);
-        })
-      }
+      // function setJsInteropControlsEnabled(enabled) {
+      //   let elements = document.querySelectorAll("#increment, label[for='value']");
+      //   elements.forEach((el) => {
+      //     el.classList.toggle('disabled', !enabled);
+      //   })
+      // }
     };
   }());
